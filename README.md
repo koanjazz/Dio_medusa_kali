@@ -7,6 +7,8 @@ Projeto prático utilizando Kali linux e Medusa
 
 # Sobre o projeto
 
+Ataque Simulado de Força Bruta Utilizando Sistema operacional kali linux e a ferramenta Medusa
+
 
 
 
