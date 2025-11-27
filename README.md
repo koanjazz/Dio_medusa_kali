@@ -1,7 +1,6 @@
 # Dio_medusa_kali
 Projeto prático utilizando Kali linux e Medusa
 
-# exemplo-readme
 
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/koanjazz/Dio_medusa_kali/blob/main/LICENSE) 
 
