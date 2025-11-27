@@ -7,7 +7,15 @@ Projeto prático utilizando Kali linux e Medusa
 
 # Sobre o projeto
 
-Ataque Simulado de Força Bruta Utilizando Sistema operacional kali linux e a ferramenta Medusa
+Configurar o ambiente: duas VMs (Kali Linux e Metasploitable 2) no VirtualBox, com rede interna (host-only).
+
+Executar ataques simulados: força bruta em FTP, automação de tentativas em formulário web (DVWA) e password spraying em SMB com enumeração de usuários.
+
+Documentar os testes: wordlists simples, comandos utilizados, validação de acessos e recomendações de mitigação.
+
+
+
+
 
 
 
