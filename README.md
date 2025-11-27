@@ -7,11 +7,10 @@ Projeto prático utilizando Kali linux e Medusa
 
 # Sobre o projeto
 
-https://wmazoni-sds1.netlify.app
 
 
 
-A aplicação consiste em uma pesquisa de preferência de games, onde os dados são coletados no app mobile, e depois são listados no app web, que também apresenta um dashboard com gráficos baseados nestes dados.
+
 
 ## Layout mobile
 ![Mobile 1](https://github.com/acenelio/assets/raw/main/sds1/mobile1.png) ![Mobile 2](https://github.com/acenelio/assets/raw/main/sds1/mobile2.png)
