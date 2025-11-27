@@ -10,6 +10,12 @@ Configurar o ambiente: duas VMs (Kali Linux e Metasploitable 2) no VirtualBox, c
 
 Executar ataques simulados: força bruta em FTP, automação de tentativas em formulário web (DVWA) e password spraying em SMB com enumeração de usuários.
 
+´´ bash ┌──(root㉿kali)-[/home/kali]
+└─# medusa -h 192.168.56.102 -U user.txt -P pass.txt -M ftp -t \m 
+Medusa v2.3 [http://www.foofus.net] (C) JoMo-Kun / Foofus Networks <jmk@foofus.net>
+
+
+
 
 
 
