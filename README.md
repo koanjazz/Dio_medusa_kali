@@ -27,9 +27,13 @@ Executar ataques simulados: força bruta em FTP, automação de tentativas em fo
 ![Mobile 1](https://github.com/acenelio/assets/raw/main/sds1/mobile1.png) ![Mobile 2](https://github.com/acenelio/assets/raw/main/sds1/mobile2.png)
 
 # Tecnologias utilizadas
+
 ## Sistema Operacional
 - Linux Kali
 - Shell Linux
+
+## Programa usado 
+- Medusa
 
 
 # Como executar o projeto
