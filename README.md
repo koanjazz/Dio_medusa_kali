@@ -35,7 +35,7 @@ Executar ataques simulados: força bruta em FTP, automação de tentativas em fo
 ## Programa usado 
 - Medusa
 
-clonar repositório<img width="1222" height="411" alt="Captura de tela em 2025-11-29 00-29-36" src="https://github.com/user-attachments/assets/82f6ba2c-c43b-4a90-b5ba-2dcef8a03f2d" />
+repositório<img width="1222" height="411" alt="Captura de tela em 2025-11-29 00-29-36" src="https://github.com/user-attachments/assets/82f6ba2c-c43b-4a90-b5ba-2dcef8a03f2d" />
 
 
 ```bash
