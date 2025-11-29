@@ -46,11 +46,12 @@ git@github.com:koanjazz/Dio_medusa_kali.git
 
 # Entrando na maquina vulnerável Metasploitable 2
 
-Primeiro passo: o Metasploit vai pedir um login e uma senha
+#Primeiro passo:# o Metasploit vai pedir um login e uma senha
 por padrão, a senha deverá ser msfadmin para login e senha
 
 Segundo passo: Identificar o numero de IP do metasploit
-com o comando (ip a)
+com o comando (ip a), identificando o numero de IP, que muito provavelmente será (129.168.56.102)
+já teremos o nosso alvo e maquina vulnerável
 
 
 
