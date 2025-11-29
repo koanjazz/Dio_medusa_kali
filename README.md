@@ -36,6 +36,8 @@ Executar ataques simulados: força bruta em FTP, automação de tentativas em fo
 - Medusa
 - Nmap
 
+
+
 Tela inicial do Metasploitable necessário login e senha, por padrão msfadmin para ambos<img width="724" height="401" alt="Captura de tela em 2025-11-29 01-19-41" src="https://github.com/user-attachments/assets/a87baeec-4bbc-4b0f-9a6c-018289ccfef7" />
 
 
@@ -45,7 +47,7 @@ Identificando numero IP da maquina vulneravel e tirando um snapshot, caso precis
 já no kali linux no terminal, iremos digitar o comando  ping -c 3  para se comunicar com metasploit<img width="662" height="509" alt="Captura de tela em 2025-11-29 01-27-05" src="https://github.com/user-attachments/assets/471bf890-ff47-43a0-8fed-3e3bfd36ac54" />
 
 
-```vim
+```bash
 
 
 git@github.com:koanjazz/Dio_medusa_kali.git
