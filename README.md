@@ -57,7 +57,8 @@ na imagem podemos ver que todas as portas estão abertas, e na coluna ao lado os
 git@github.com:koanjazz/Dio_medusa_kali.git
 
 ## O Metasploitable 2
-(MSF2) é uma máquina virtual Linux intencionalmente vulnerável, criada para testes, demonstrações e prática em segurança ofensiva.
+(MSF2) é uma máquina virtual Linux intencionalmente vulnerável, criada para testes,
+demonstrações e prática em segurança ofensiva.
 Ele é baseado no Ubuntu 8.04 LTS Server, com pacotes propositalmente:
 
 desatualizados,
@@ -67,6 +68,19 @@ mal configurados,
 rodando serviços inseguros por padrão.
 
 Ou seja: é um ambiente controlado para exploração.
+
+| Serviço               | Porta   | Problema Técnico                              |
+| --------------------- | ------- | --------------------------------------------- |
+| **vsftpd 2.3.4**      | 21      | Backdoor presente no código fonte             |
+| **OpenSSH antigo**    | 22      | Não vulnerável, mas permite brute-force       |
+| **Distcc**            | 3632    | Execução remota de comandos (RCE) sem auth    |
+| **Samba 3.0.20**      | 139/445 | Exploit "username map script" (CVE-2007-2447) |
+| **Telnet**            | 23      | Autenticação fraca + plaintext                |
+| **MySQL**             | 3306    | Credenciais default + permissão ampla         |
+| **Tomcat 5.5**        | 8180    | Credenciais padrão + upload de WAR            |
+| **ProFTPD**           | 2121    | Backdoor da versão comprometida               |
+| **Apache/PHP antigo** | 80      | Vários CVEs de deserialização / RCE           |
+
 
 
 
