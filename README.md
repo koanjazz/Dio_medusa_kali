@@ -45,16 +45,16 @@ Executar ataques simulados: força bruta em FTP, automação de tentativas em fo
 git@github.com:koanjazz/Dio_medusa_kali.git
 
 # Entrando na maquina vulnerável Metasploitable 2
-Primeiro passo o Metasploit vai pedir um login e uma senha
-por padrão a senha deverá ser msfadmin para log in e senha
+
+Primeiro passo: o Metasploit vai pedir um login e uma senha
+por padrão, a senha deverá ser msfadmin para login e senha
+
+Segundo passo: Identificar o numero de IP do metasploit
+com o comando (ip a)
 
 
 
 
-
-# executar o projeto
-./mvnw spring-boot:run
-```
 
 
 
