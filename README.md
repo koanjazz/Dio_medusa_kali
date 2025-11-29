@@ -38,7 +38,7 @@ Executar ataques simulados: força bruta em FTP, automação de tentativas em fo
 Identificando numero IP da maquina vulneravel e tirando um snapshot, caso precise recuperar <img width="1222" height="411" alt="Captura de tela em 2025-11-29 00-29-36" src="https://github.com/user-attachments/assets/82f6ba2c-c43b-4a90-b5ba-2dcef8a03f2d" />
 
 
-```bash
+```vim
 
 
 git@github.com:koanjazz/Dio_medusa_kali.git
