@@ -56,7 +56,7 @@ na imagem podemos ver que todas as portas estão abertas, e na coluna ao lado os
 
 git@github.com:koanjazz/Dio_medusa_kali.git
 
-## O Metasploitable 2
+## Metasploitable 2
 (MSF2) é uma máquina virtual Linux intencionalmente vulnerável, criada para testes,
 demonstrações e prática em segurança ofensiva.
 Ele é baseado no Ubuntu 8.04 LTS Server, com pacotes propositalmente:
@@ -84,7 +84,7 @@ Ou seja: é um ambiente controlado para exploração.
 
 -----------------------------------------------------------------------------------
 
-##ping
+## ping
 é uma ferramenta que testa conectividade de rede usando o protocolo ICMP (Internet Control Message Protocol), especificamente:
 
 ICMP Echo Request (tipo 8)
