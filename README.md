@@ -34,6 +34,7 @@ Executar ataques simulados: força bruta em FTP, automação de tentativas em fo
 
 ## Programa usado 
 - Medusa
+- Nmap
 
 Tela inicial do Metasploitable necessário login e senha, por padrão msfadmin para ambos<img width="724" height="401" alt="Captura de tela em 2025-11-29 01-19-41" src="https://github.com/user-attachments/assets/a87baeec-4bbc-4b0f-9a6c-018289ccfef7" />
 
