@@ -58,7 +58,7 @@ já teremos o nosso alvo e maquina vulnerável
 Agora no kali, vamos testar a conexão do nosso sistema com o metasploit, com o comando ping -c 3  seguido do IP
 da maquina alvo (192.168.56.102)
 #NOTA: Ping é uma ferramenta de rede usada para testar a conectividade entre um dispositivo e outro na Internet ou rede local.
-Tecnicamente, ele funciona usando o protocolo ICMP (Internet Control Message Protocol).
+Técnicamente, ele funciona usando o protocolo ICMP (Internet Control Message Protocol).
 
 
 
