@@ -37,8 +37,9 @@ Executar ataques simulados: força bruta em FTP, automação de tentativas em fo
 
 
 
-```python
-# clonar repositório
+```bash
+# clonar repositório<img width="1222" height="411" alt="Captura de tela em 2025-11-29 00-29-36" src="https://github.com/user-attachments/assets/82f6ba2c-c43b-4a90-b5ba-2dcef8a03f2d" />
+
 git@github.com:koanjazz/Dio_medusa_kali.git
 
 # Entrando na maquina vulnerável Metasploitable 2
@@ -53,8 +54,10 @@ com o comando (ip a), identificando o numero de IP, que muito provavelmente ser�
 já teremos o nosso alvo e maquina vulnerável
 
 #Terceiro passo:
-Agora no kali, vamos testar a conexão do nosso sistema com o metasploit, com o comando ping seguido do IP
+Agora no kali, vamos testar a conexão do nosso sistema com o metasploit, com o comando ping -c 3  seguido do IP
 da maquina alvo (192.168.56.102)
+#NOTA: Ping é uma ferramenta de rede usada para testar a conectividade entre um dispositivo e outro na Internet ou rede local.
+Tecnicamente, ele funciona usando o protocolo ICMP (Internet Control Message Protocol).
 
 
 
