@@ -51,7 +51,7 @@ na imagem podemos ver que todas as portas estão abertas, e na coluna ao lado os
 <img width="1065" height="380" alt="Captura de tela em 2025-11-29 03-11-51" src="https://github.com/user-attachments/assets/e276a322-7b78-4865-bdbf-c386ed56fb2c" />
 
 
-```bash
+
 
 
 git@github.com:koanjazz/Dio_medusa_kali.git
@@ -80,6 +80,24 @@ Ou seja: é um ambiente controlado para exploração.
 | **Tomcat 5.5**        | 8180    | Credenciais padrão + upload de WAR            |
 | **ProFTPD**           | 2121    | Backdoor da versão comprometida               |
 | **Apache/PHP antigo** | 80      | Vários CVEs de deserialização / RCE           |
+
+
+-----------------------------------------------------------------------------------
+
+##ping
+é uma ferramenta que testa conectividade de rede usando o protocolo ICMP (Internet Control Message Protocol), especificamente:
+
+ICMP Echo Request (tipo 8)
+
+ICMP Echo Reply (tipo 0)
+
+Ele mede:
+
+latência (tempo de ida e volta — RTT)
+
+perda de pacotes
+
+disponibilidade da máquina remota
 
 
 
