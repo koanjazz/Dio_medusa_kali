@@ -39,14 +39,18 @@ Executar ataques simulados: força bruta em FTP, automação de tentativas em fo
 # Como executar o projeto
 
 ## Back end
-Pré-requisitos: Java 11
 
 ```bash
 # clonar repositório
 git@github.com:koanjazz/Dio_medusa_kali.git
 
-# entrar na pasta do projeto back end
-cd backend
+# Entrando na maquina vulnerável Metasploitable 2
+Primeiro passo o Metasploit vai pedir um login e uma senha
+por padrão a senha deverá ser msfadmin para log in e senha
+
+
+
+
 
 # executar o projeto
 ./mvnw spring-boot:run
