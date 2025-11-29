@@ -56,22 +56,18 @@ na imagem podemos ver que todas as portas estão abertas, e na coluna ao lado os
 
 git@github.com:koanjazz/Dio_medusa_kali.git
 
-# Entrando na maquina vulnerável Metasploitable 2
+## O Metasploitable 2
+(MSF2) é uma máquina virtual Linux intencionalmente vulnerável, criada para testes, demonstrações e prática em segurança ofensiva.
+Ele é baseado no Ubuntu 8.04 LTS Server, com pacotes propositalmente:
 
-#Primeiro passo:
-o Metasploit vai pedir um login e uma senha
-por padrão, a senha deverá ser msfadmin para login e senha
+desatualizados,
 
-#Segundo passo:
-Identificar o numero de IP do metasploit
-com o comando (ip a), identificando o numero de IP, que muito provavelmente será (129.168.56.102)
-já teremos o nosso alvo e maquina vulnerável
+mal configurados,
 
-#Terceiro passo:
-Agora no kali, vamos testar a conexão do nosso sistema com o metasploit, com o comando ping -c 3  seguido do IP
-da maquina alvo (192.168.56.102)
-#NOTA: Ping é uma ferramenta de rede usada para testar a conectividade entre um dispositivo e outro na Internet ou rede local.
-Técnicamente, ele funciona usando o protocolo ICMP (Internet Control Message Protocol).
+rodando serviços inseguros por padrão.
+
+Ou seja: é um ambiente controlado para exploração.
+
 
 
 
