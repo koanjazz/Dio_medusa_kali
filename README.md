@@ -46,6 +46,9 @@ Identificando numero IP da maquina vulneravel e tirando um snapshot, caso precis
 
 já no kali linux no terminal, iremos digitar o comando  ping -c 3  para se comunicar com metasploit<img width="662" height="509" alt="Captura de tela em 2025-11-29 01-27-05" src="https://github.com/user-attachments/assets/471bf890-ff47-43a0-8fed-3e3bfd36ac54" />
 
+O cenário a ser explorado é de um servidos FTP antigo, que pode estar com falha de segurança, o objetivo aqui é confirmar se existe alguma vunerabilidade  
+<img width="1065" height="380" alt="Captura de tela em 2025-11-29 03-11-51" src="https://github.com/user-attachments/assets/e276a322-7b78-4865-bdbf-c386ed56fb2c" />
+
 
 ```bash
 
