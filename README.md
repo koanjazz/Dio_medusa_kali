@@ -49,7 +49,7 @@ já no kali linux no terminal, iremos digitar o comando  ping -c 3  para se comu
 O cenário a ser explorado é de um servidos FTP antigo, que pode estar com falha de segurança, 
 o objetivo aqui é confirmar se existe alguma vunerabilidade
 o parâmetro -sV ele tenta identificar, a versão do serviço que está rodando em cada porta
-na imagem podemos ver que todas as portas estão abertas, e na coluna ao lado os serviços
+na imagem podemos ver que todas as portas estão abertas, e na coluna ao lado dos serviços
 <img width="1065" height="380" alt="Captura de tela em 2025-11-29 03-11-51" src="https://github.com/user-attachments/assets/e276a322-7b78-4865-bdbf-c386ed56fb2c" />
 
 
