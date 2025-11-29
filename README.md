@@ -55,7 +55,9 @@ na imagem podemos ver que todas as portas estão abertas, e na coluna ao lado os
 
 
 git@github.com:koanjazz/Dio_medusa_kali.git
+
 ´´´ bash
+
 ## Metasploitable 2
 (MSF2) é uma máquina virtual Linux intencionalmente vulnerável, criada para testes,
 demonstrações e prática em segurança ofensiva.
