@@ -1,0 +1,21 @@
+#!/bin/bash
+echo "_____________________"
+echo "Verificar portas Abertas"
+echo "_____________________"
+
+if command -v ss >/dev/null >&1; then
+  echo "[+] Usando ss para verificar portas..."
+  ss -tulnp
+elif command -v netstat >/dev/null 2>&1; then
+  echo "Usando netstat para verificar portas..."
+  netstat -tulnp
+
+else
+    echo "[-] Nenhum comando encontrado (ss ou netstat)."
+    exit 1
+
+  fi
+
+  echo "--------------------------------"
+  echo "Análise Concluida"
+  echo "-------------------------------"   
