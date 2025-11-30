@@ -33,6 +33,7 @@ Executar ataques simulados: força bruta em FTP, automação de tentativas em fo
 ## Programa usado 
 - Medusa
 - Nmap
+- Enum4linux
 
 
 
@@ -77,6 +78,21 @@ Com esse código conseguimos ter acesso ao site.<img width="1775" height="53" al
 
 
 <img width="909" height="742" alt="Captura de tela em 2025-11-29 23-54-56" src="https://github.com/user-attachments/assets/cc5e1a3d-8bd0-42e7-b61f-69a7f1a27f2e" />
+
+
+# Explicando Código
+-a → ativar all enumeration, roda todas as técnicas
+
+tee enum4_output.txt → envia a saída para a tela e salva no arquivo
+
+O enum4linux identificou muitas vulnerabilidades no DVWA, mas essas são as mais criticas que achei 
+# Senha padrão quase sempre é msfadmin
+# Login SSH provável
+# Login FTP provável
+# Login Telnet provável
+
+<img width="645" height="53" alt="Captura de tela em 2025-11-30 00-08-23" src="https://github.com/user-attachments/assets/eff31c19-c7c2-4018-978d-36d207e4ca80" />
+
 
 
 
@@ -182,6 +198,41 @@ funções para enviar o payload de autenticação
 funções para interpretar a resposta
 
 Isso permite que cada módulo trate sua própria lógica de autenticação.
+
+#enum4linux é uma ferramenta de enumeração voltada para Samba e Windows hosts, extremamente usada em pentest, CTFs e auditorias.
+Ele é basicamente um wrapper (uma interface facilitada) para vários comandos SMB e RPC do Samba.
+
+Ele ajuda a descobrir informações de máquinas Windows ou Linux que usam SMB, como:
+
+Usuários (RID Cycling)
+
+Grupos
+
+Compartilhamentos (shares)
+
+Políticas de senha
+
+Domínio/workgroup
+
+Sessão anônima SMB
+
+NetBIOS info
+
+É como se juntasse várias ferramentas:
+
+nmblookup
+
+smbclient
+
+rpcclient
+
+net
+
+enumerações NBT
+
+consultas ao serviço 445 e 139
+
+
 
 
 
