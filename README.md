@@ -36,21 +36,47 @@ Executar ataques simulados: força bruta em FTP, automação de tentativas em fo
 
 
 
-Tela inicial do Metasploitable necessário login e senha, por padrão msfadmin para ambos<img width="724" height="401" alt="Captura de tela em 2025-11-29 01-19-41" src="https://github.com/user-attachments/assets/a87baeec-4bbc-4b0f-9a6c-018289ccfef7" />
+Tela inicial do Metasploitable necessário login e senha, por padrão msfadmin para ambos.<img width="724" height="401" alt="Captura de tela em 2025-11-29 01-19-41" src="https://github.com/user-attachments/assets/a87baeec-4bbc-4b0f-9a6c-018289ccfef7" />
 
 
-Identificando numero IP da maquina vulneravel e tirando um snapshot, caso precise recuperar <img width="1222" height="411" alt="Captura de tela em 2025-11-29 00-29-36" src="https://github.com/user-attachments/assets/82f6ba2c-c43b-4a90-b5ba-2dcef8a03f2d" />
+Identificando numero IP da maquina vulneravel e tirando um snapshot, caso precise recuperar. <img width="1222" height="411" alt="Captura de tela em 2025-11-29 00-29-36" src="https://github.com/user-attachments/assets/82f6ba2c-c43b-4a90-b5ba-2dcef8a03f2d" />
 
 
-já no kali linux no terminal, iremos digitar o comando  ping -c 3  para se comunicar com metasploit<img width="662" height="509" alt="Captura de tela em 2025-11-29 01-27-05" src="https://github.com/user-attachments/assets/471bf890-ff47-43a0-8fed-3e3bfd36ac54" />
+já no kali linux no terminal, iremos digitar o comando  ping -c 3  para se comunicar com metasploit.<img width="662" height="509" alt="Captura de tela em 2025-11-29 01-27-05" src="https://github.com/user-attachments/assets/471bf890-ff47-43a0-8fed-3e3bfd36ac54" />
 
 O cenário a ser explorado é de um servidos FTP antigo, que pode estar com falha de segurança, 
 o objetivo aqui é confirmar se existe alguma vunerabilidade
 o parâmetro -sV ele tenta identificar, a versão do serviço que está rodando em cada porta
-na imagem podemos ver que todas as portas estão abertas, e na coluna ao lado os serviços e versões
+na imagem podemos ver que todas as portas estão abertas, e na coluna ao lado os serviços e versões.
 <img width="1065" height="380" alt="Captura de tela em 2025-11-29 03-11-51" src="https://github.com/user-attachments/assets/e276a322-7b78-4865-bdbf-c386ed56fb2c" />
 
 
+Nessa parte, tentamos fazer uma conexão com o ftp, para confirmar se ele está ativo, e sim ele está ativo, porém, não temos acesso a ele.<img width="394" height="249" alt="Captura de tela em 2025-11-29 21-49-38" src="https://github.com/user-attachments/assets/93962aa0-e3b7-47bc-8b3e-4a66cb7fe1e0" />
+
+Agora iremso criar duas word list simples, uma de senha a outra de usuário<img width="649" height="302" alt="Captura de tela em 2025-11-29 22-11-15" src="https://github.com/user-attachments/assets/f72f1d86-8211-4eec-ae61-4d32ad23d4c8" />
+
+
+# Explicando a sequência de codigo no medusa
+#  -h 192.168.56.102: Host alvo que receberá as conexões
+#  -U users.txt: Vai ler a lista de nomes de usuário nesse arquivo
+#  -P pass.txt: Vai ler a lista de senhas nesse arquivo
+#  -M ftp: Módulo/protocolo especifica qual módulo usar; aqui é o ftp
+#  -t 6: Threads concorrentes: controla quantas tentativas paralelas ele fará ao mesmo tempo. 6 threads
+na imagem, com poucas tentaivas o medusa já encontrou usuário e senha 
+<img width="1353" height="306" alt="Captura de tela em 2025-11-29 22-24-10" src="https://github.com/user-attachments/assets/bf4b8d55-dee2-4d73-8870-ed15a0b9620f" />
+
+
+Com login e senha encontrados, conseguimos acessar a maquina
+<img width="727" height="275" alt="Captura de tela em 2025-11-29 22-54-54" src="https://github.com/user-attachments/assets/63fd0fdf-e311-46ae-8cb7-fd2da4be08fd" />
+
+
+Agora, ataque de força bruta em sistemas web, utilizando novamente o medusa<img width="544" height="320" alt="Captura de tela em 2025-11-29 23-01-54" src="https://github.com/user-attachments/assets/3712bda6-69bf-4b9c-af79-b60f783fba33" />
+
+
+Com esse código conseguimos ter acesso ao site.<img width="1775" height="53" alt="Captura de tela em 2025-11-29 23-49-22" src="https://github.com/user-attachments/assets/8f69991a-66e3-4745-abe5-569bc6fd8e6d" />
+
+
+<img width="909" height="742" alt="Captura de tela em 2025-11-29 23-54-56" src="https://github.com/user-attachments/assets/cc5e1a3d-8bd0-42e7-b61f-69a7f1a27f2e" />
 
 
 
@@ -100,6 +126,62 @@ latência (tempo de ida e volta — RTT)
 perda de pacotes
 
 disponibilidade da máquina remota
+
+## Nmap
+
+(Network Mapper) é uma ferramenta que realiza:
+
+varredura de portas
+
+detecção de serviços
+
+fingerprinting de SO
+
+varredura de rede
+
+identificação de vulnerabilidades (NSE scripts)
+
+Ele funciona manipulando pacotes IP, TCP, UDP e ICMP em baixo nível — muitas vezes usando raw sockets.
+
+trabalha usando várias técnicas de varredura.
+
+Os principais pilares técnicos são:
+
+Port Scanning
+
+Host Discovery
+
+Service Detection (Version Probe)
+
+OS Fingerprinting (TCP/IP stack fingerprint)
+
+NSE — Nmap Scripting Engine
+
+Traceroute próprio
+
+#Medusa
+O Medusa é um fast, massively parallel, modular, login brute-forcer, projetado para testar credenciais em vários serviços de rede.
+O Medusa usa módulos específicos para cada protocolo/serviço, por exemplo:
+
+-M ssh
+
+-M ftp
+
+-M smb
+
+-M http
+
+-M web-form
+
+Cada módulo contém:
+
+funções para conectar ao serviço-alvo
+
+funções para enviar o payload de autenticação
+
+funções para interpretar a resposta
+
+Isso permite que cada módulo trate sua própria lógica de autenticação.
 
 
 
