@@ -1,21 +1,31 @@
 #!/bin/bash
+
+# Visual header for the terminal output
 echo "_____________________"
-echo "Verificar portas Abertas"
+echo "Checking Open Ports"
 echo "_____________________"
 
-if command -v ss >/dev/null >&1; then
-  echo "[+] Usando ss para verificar portas..."
+# COMPATIBILITY CHECK:
+# Check if 'ss' (Socket Statistics) command exists.
+# '>/dev/null 2>&1' redirects output and errors to null to keep the terminal clean.
+if command -v ss >/dev/null 2>&1; then
+  echo "[+] Using 'ss' to verify ports..."
+  # -t: TCP, -u: UDP, -l: Listening, -n: Numeric, -p: Show Process/PID
   ss -tulnp
+
+# Fallback: check if 'netstat' exists if 'ss' is not found
 elif command -v netstat >/dev/null 2>&1; then
-  echo "Usando netstat para verificar portas..."
+  echo "[+] Using 'netstat' to verify ports..."
+  # Same flags as 'ss' for consistent results
   netstat -tulnp
 
+# Error handling if neither tool is installed
 else
-    echo "[-] Nenhum comando encontrado (ss ou netstat)."
+    echo "[-] Error: No network tool found (ss or netstat)."
     exit 1
+fi
 
-  fi
-
-  echo "--------------------------------"
-  echo "Análise Concluida"
-  echo "-------------------------------"   
+# Visual footer
+echo "--------------------------------"
+echo "Analysis Completed"
+echo "-------------------------------"
